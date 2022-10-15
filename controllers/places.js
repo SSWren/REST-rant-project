@@ -1,5 +1,6 @@
 const router = require('express').Router()
 
+//Index
 router.get('/', (req, res)=>{
     let places =[{
         name: 'H-Thai-ML',
@@ -15,6 +16,11 @@ router.get('/', (req, res)=>{
         pic: '/images/coffeecats.jpg'
     }]
     res.render('places/index', { places })
+})
+
+//New
+router.get('/new', (req, res) => {
+    res.render('places/new')
 })
 
 //Show
