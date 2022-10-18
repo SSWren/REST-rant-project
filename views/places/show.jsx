@@ -6,12 +6,11 @@ function show (data) {
         <Def>
           <main>
             <h1>{ data.place.name }</h1>
+            <p>Located in {data.place.city}, {data.place.state}, serving {data.place.cuisines}</p>
             <h2>Rating</h2>
-                <h3>Not Rated</h3>
-            <h2>Description</h2>
-                <h3>N/A</h3>
+                <p>Not Rated</p>
             <h2>Comments</h2>
-                <h3>No Comments Yet!</h3>
+                <p>No comments yet!</p>
             <a href={`/places/${data.id}/edit`} className="btn btn-warning">
                 Edit
             </a>
